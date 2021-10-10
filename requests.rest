@@ -1,0 +1,26 @@
+GET http://localhost:3000/posts
+Authorization: Barrer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F5bCIsImlhdCI6MTYzMzg3NDczOCwiZXhwIjoxNjMzODc0Nzk4fQ.ptZpYAiAmKv3EKtJ-QSl36wZ_fObM9vN19JB1-PsjLw
+
+###
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSmltIiwiaWF0IjoxNjMzODc0MTk5fQ.jTa7JjXjfe5yaBK8AzvAWoThzZpOBI3SK4GtXKq5-Wk"
+}
+
+###
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiS2F5bCIsImlhdCI6MTYzMzg3NDYxOH0.yXhxKedKvqT9hdRemSk5TyQWFLNBBLIJ0viBqBJO1mI"
+}
+
+###
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Kayl"
+}
